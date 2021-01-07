@@ -20,8 +20,8 @@ class EventCard extends StatelessWidget {
          margin: EdgeInsets.all(10.0),
          child: SizedBox(
           
-        height: MediaQuery.of(context).size.height * 0.7,
-        width: MediaQuery.of(context).size.width * 0.7,
+        height: MediaQuery.of(context).size.height ,
+        width: MediaQuery.of(context).size.width ,
         child: Image.network(imageUrl ,
         fit: BoxFit.cover,
          )

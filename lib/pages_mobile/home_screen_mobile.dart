@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_fadein/flutter_fadein.dart';
 
 
-class HomeScreen extends StatelessWidget {
+class HomeScreenMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                               height: MediaQuery.of(context).size.height * 0.1,
                           width: MediaQuery.of(context).size.width * 0.1,
                               child: Image.asset("../../assets/img/home_page/vines.png" , fit: BoxFit.cover,)),
-                            Text("Rotract MNIT" , style: TextStyle(color: Colors.white , fontSize: MediaQuery.of(context).size.width * 0.03,)),
+                            Text("Rotract MNIT" , style: TextStyle(color: Colors.white , fontSize: MediaQuery.of(context).size.width * 0.1,)),
                              SizedBox(
                               height: MediaQuery.of(context).size.height * 0.1,
                           width: MediaQuery.of(context).size.width * 0.1,
@@ -62,8 +62,9 @@ class HomeScreen extends StatelessWidget {
                       color: Colors.black54,
                       child: Column(
                         children: [
-                        Text("Peace begins with a smile." ,style: TextStyle(color: Colors.white , fontSize: MediaQuery.of(context).size.width * 0.03)),
-                         Text("-Mother Teresa" , style: TextStyle(color: Colors.white , fontSize: MediaQuery.of(context).size.width * 0.01)),
+                        Text("Peace begins with a smile." ,style: TextStyle(color: Colors.white , fontSize: MediaQuery.of(context).size.width * 0.05)),
+                         Text("-Mother Teresa" , style: TextStyle(color: Colors.white , fontSize: MediaQuery.of(context).size.width * 0.03),
+                          textAlign: TextAlign.end,),
                         ],
                       )
                     ),

@@ -1,4 +1,4 @@
-import 'dart:html';
+import 'package:explore/home_page_mobile.dart';
 import 'package:explore/pages/about_screen.dart';
 import 'package:explore/pages/achievements_screen.dart';
 import 'package:explore/pages/events_screen.dart';
@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+
 
 class MyHomePage extends StatefulWidget {
   
@@ -41,6 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -208,6 +210,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     const Text('Contact Us', style: TextStyle(fontSize: 12)),
               ), 
               ),
+
+              //SubScribe Button
                FlatButton(
               onPressed: () {
                  showDialog(context: context, 
@@ -329,7 +333,8 @@ class _MyHomePageState extends State<MyHomePage> {
         )
       ),
     );
-  }
+    }
+  
 
   void _scrollToIndex(int index) {
     controller.animateToPage(index , duration: Duration(seconds: 2), curve: Curves.fastLinearToSlowEaseIn);
